@@ -38,3 +38,16 @@ Tab Jumper is a browser extension that allows you to quickly jump between tabs.
     ```
 
     This will open a new browser window with the extension loaded. Any changes you make in development mode will automatically reload in the browser.
+
+## Configuration
+
+This project uses environment variables for sensitive configuration. A `.env.example` file is provided to show the required variables.
+
+1.  **Create your .env file:**
+
+    ```bash
+    cp .env.example .env
+    ```
+
+2.  **Edit .env:**
+    Open the newly created `.env` file and fill in the values for `AMO_JWT_ISSUER` and `AMO_JWT_SECRET`. You can obtain these keys from [https://addons.mozilla.org/en-US/developers/addon/api/key/](https://addons.mozilla.org/en-US/developers/addon/api/key/).
