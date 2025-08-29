@@ -7,7 +7,7 @@ Tab Jumper is a browser extension that allows you to quickly jump between tabs.
 1.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-username/tab-jumper.git
+    git clone https://github.com/oggnimodd/tab-jumper.git
     cd tab-jumper
     ```
 
