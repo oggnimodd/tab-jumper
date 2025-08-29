@@ -1,0 +1,27 @@
+{
+	"manifest_version": 3,
+	"name": "Tab Jumper",
+	"version": "1.2",
+	"description": "Configure keyboard shortcuts to quickly open or switch to your favorite websites.",
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"permissions": ["tabs", "storage"],
+	"options_ui": {
+		"page": "options.html"
+	},
+	"commands": {
+		"focus-or-open-1": { "description": "Activate Shortcut 1" },
+		"focus-or-open-2": { "description": "Activate Shortcut 2" },
+		"focus-or-open-3": { "description": "Activate Shortcut 3" },
+		"focus-or-open-4": { "description": "Activate Shortcut 4" },
+		"focus-or-open-5": { "description": "Activate Shortcut 5" },
+		"focus-or-open-6": { "description": "Activate Shortcut 6" }
+	},
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "tab-jumper@your-domain.com",
+			"strict_min_version": "109.0"
+		}
+	}
+}

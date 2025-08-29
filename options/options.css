@@ -1,0 +1,27 @@
+body {
+	font-family: sans-serif;
+	padding: 1em;
+	max-width: 600px;
+	margin: 0 auto;
+}
+.form-group {
+	margin-bottom: 1em;
+	display: flex;
+	flex-direction: column;
+}
+label {
+	margin-bottom: 0.25em;
+	font-weight: bold;
+}
+input {
+	padding: 0.5em;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+.button-group {
+	margin-top: 1.5em;
+}
+#status {
+	margin-left: 1em;
+	color: green;
+}

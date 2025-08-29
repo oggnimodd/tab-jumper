@@ -1,0 +1,23 @@
+{
+	"name": "tab-jumper",
+	"module": "index.ts",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"build": "tsdown",
+		"build:prod": "NODE_ENV=production tsdown",
+		"dev": "NODE_ENV=development tsdown",
+		"package": "cd dist && zip -r ../tab-jumper.zip .",
+		"start": "web-ext run --source-dir ./dist/",
+		"sign": "bun run build:prod && bun run sign.ts"
+	},
+	"devDependencies": {
+		"@types/bun": "latest",
+		"@types/firefox-webext-browser": "^120.0.4",
+		"tsdown": "^0.14.2",
+		"web-ext": "^8.9.0"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	}
+}

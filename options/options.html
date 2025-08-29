@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="dark light" />
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tab Jumper Settings</h1>
+      <p>
+        Enter the full URL for each shortcut. Leave blank to disable a shortcut.
+      </p>
+
+      <form id="options-form">
+        <div class="form-group">
+          <label for="shortcut-1">Shortcut 1 URL:</label>
+          <input
+            type="url"
+            id="shortcut-1"
+            placeholder="e.g., https://www.google.com"
+          />
+        </div>
+        <div class="form-group">
+          <label for="shortcut-2">Shortcut 2 URL:</label>
+          <input
+            type="url"
+            id="shortcut-2"
+            placeholder="e.g., https://github.com"
+          />
+        </div>
+        <div class="form-group">
+          <label for="shortcut-3">Shortcut 3 URL:</label>
+          <input
+            type="url"
+            id="shortcut-3"
+            placeholder="e.g., http://localhost:3000/dashboard"
+          />
+        </div>
+        <div class="form-group">
+          <label for="shortcut-4">Shortcut 4 URL:</label>
+          <input type="url" id="shortcut-4" />
+        </div>
+        <div class="form-group">
+          <label for="shortcut-5">Shortcut 5 URL:</label>
+          <input type="url" id="shortcut-5" />
+        </div>
+        <div class="form-group">
+          <label for="shortcut-6">Shortcut 6 URL:</label>
+          <input type="url" id="shortcut-6" />
+        </div>
+
+        <div class="button-group">
+          <button type="submit">Save Settings</button>
+          <span id="status"></span>
+        </div>
+      </form>
+    </div>
+
+    <script src="options.js"></script>
+  </body>
+</html>
